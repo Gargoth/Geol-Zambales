@@ -7,7 +7,7 @@ export default function Intro() {
                 <div className="row g-0">
                     <div className="col-md-4 overflow-hidden">
                         <motion.img
-                            src="public/topographic_map.svg"
+                            src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Zambales_Mountains_topographic_map_en.svg"
                             viewport={{ once: true }}
                             initial={{ scale: 50, rotate: 100 }}
                             whileInView={{ scale: 1, rotate: 0 }}
