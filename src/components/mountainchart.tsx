@@ -1,14 +1,14 @@
 import { Bar, BarChart, Tooltip, XAxis, YAxis } from "recharts"
 import useWindowDimensions from "../utils/useWindowDimensions"
 
-const getPath = (x, y, width, height) => (
+const getPath = (x: number, y: number, width: number, height: number) => (
     `M${x},${y + height}
    C${x + width / 3},${y + height} ${x + width / 2},${y + height / 3} ${x + width / 2}, ${y}
    C${x + width / 2},${y + height / 3} ${x + 2 * width / 3},${y + height} ${x + width}, ${y + height}
    Z`
 );
 
-const TriangleBar = (props) => {
+const TriangleBar = (props: any) => {
     const {
         fill, x, y, width, height,
     } = props;
