@@ -1,6 +1,6 @@
 export default function Topbar() {
     return (
-        <nav className="navbar navbar-expand-lg mb-5 c-navbar">
+        <nav className="navbar navbar-expand-lg text-bg-danger">
             <div className="container-fluid">
                 <a className="navbar-brand" href="#"><h1 className="text-white">Geology of Zambales</h1></a>
                 <ul className="navbar-nav me-auto">

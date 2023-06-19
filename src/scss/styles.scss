@@ -1,19 +1,5 @@
 @import "bootstrap/scss/bootstrap";
 
-.c-navbar {
-    background-color: $orange;
-}
-
-div:has(.c-map) {
-    overflow: hidden;
-}
-
-.c-map {
-    transform: scale(1);
-    transition: 0.3s ease-in-out;
-}
-
-.c-map:hover {
-    transform: scale(1.5);
-    transition: 0.3s ease-in-out;
+.c-subtitle {
+    color: $gray-600
 }
