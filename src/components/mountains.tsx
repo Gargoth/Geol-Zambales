@@ -4,7 +4,7 @@ import MountainChart from './mountainchart'
 export default function Mountains() {
     return (
         <>
-            <motion.div className="container my-3" initial={{ x: 100, opacity: 0 }} whileInView={{ x: 0, opacity: 100 }} viewport={{ once: true }} transition={{ type: "spring" }}>
+            <motion.div className="container my-3" initial={{ x: -100, opacity: 0 }} whileInView={{ x: 0, opacity: 100 }} viewport={{ once: true }} transition={{ type: "spring" }}>
                 <div className="card text-bg-light">
                     <h1 className="card-title p-3">Mountains of Zambales</h1>
                     <h1 className="card-subtitle p-3 fs-4 c-subtitle">Height comparison of mountains in meters</h1>

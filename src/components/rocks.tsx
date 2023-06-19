@@ -53,7 +53,7 @@ const rocks: rock[] = [
 ]
 
 export default function Rocks() {
-    const rockCards: JSX.Element[] = rocks.map((rock) => <RockCard name={rock.name} imageurl={rock.imageurl} description={rock.description} />)
+    const rockCards: JSX.Element[] = rocks.map((rock) => <RockCard name={rock.name} classification={rock.classification} imageurl={rock.imageurl} description={rock.description} />)
     return (
         <motion.div className="container my-3" initial={{ x: 100, opacity: 0 }} whileInView={{ x: 0, opacity: 100 }} viewport={{ once: true }} transition={{ type: "spring" }}>
             <h1 className="display-1">Notable Rocks in Zambales</h1>

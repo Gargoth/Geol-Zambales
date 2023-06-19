@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 
 export interface rock {
     name: string,
@@ -8,10 +9,10 @@ export interface rock {
 
 export default function RockCard(props: rock) {
     return (
-        <div className="card">
-            <div className="row g-0">
-                <div className="col-md-4">
-                    <img className="img-fluid rounded-start" src={props.imageurl} />
+        <motion.div className="card fs-5" initial={{ x: -100, opacity: 0 }} whileInView={{ x: 0, opacity: 100 }} viewport={{ once: true }} transition={{ duration: 1 }}>
+            <div className="row g-0 overflow-hidden" style={{ maxHeight: "30vh" }}>
+                <div className="col-md-2 overflow-hidden">
+                    <img className="img-thumbnail rounded-start" src={props.imageurl} />
                 </div>
                 <div className="col-md-8 card-body">
                     <h5 className="card-title">{props.name}</h5>
@@ -19,6 +20,6 @@ export default function RockCard(props: rock) {
                     <p className="card-text">{props.description}</p>
                 </div>
             </div>
-        </div>
+        </motion.div >
     )
 }

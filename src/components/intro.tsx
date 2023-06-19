@@ -2,7 +2,7 @@ import { motion } from "framer-motion"
 
 export default function Intro() {
     return (
-        <motion.div className="container my-3" initial={{ x: 100, opacity: 0 }} whileInView={{ x: 0, opacity: 100 }} viewport={{ once: true }} transition={{ type: "spring" }}>
+        <motion.div className="container my-3" initial={{ x: -100, opacity: 0 }} whileInView={{ x: 0, opacity: 100 }} viewport={{ once: true }} transition={{ type: "spring" }}>
             <div className="card text-bg-success">
                 <div className="row g-0">
                     <div className="col-md-4 overflow-hidden">

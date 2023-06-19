@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function Ophiolites() {
     return (
-        <motion.div className="container my-3" initial={{ x: 100, opacity: 0 }} whileInView={{ x: 0, opacity: 100 }} viewport={{ once: true }} transition={{ type: "spring" }}>
+        <motion.div className="container my-3" initial={{ x: -100, opacity: 0 }} whileInView={{ x: 0, opacity: 100 }} viewport={{ once: true }} transition={{ type: "spring" }}>
             <div className="card p-3 text-bg-secondary">
                 <div className="row">
                     <h1 className="card-title">Zambales Ophiolite Complex</h1>
